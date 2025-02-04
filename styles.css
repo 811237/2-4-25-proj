@@ -16,6 +16,26 @@ body {
     background-color: rgb(255, 177, 59);
 }
 
+form {
+    text-align: center;
+    padding: 2em 35%;
+}
+
+form input {
+    margin-bottom: .2em;
+    display: block;
+    width: 30vw;
+}
+
+form input:nth-child(4) {
+    height: 4em;
+}
+
+form input:nth-child(5) {
+    width: 15vw;
+    margin-left: 7.5vw;
+}
+
 /*Class styling*/
 
 
