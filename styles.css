@@ -27,10 +27,6 @@ form input {
     width: 30vw;
 }
 
-form input:nth-child(4) {
-    height: 4em;
-}
-
 form input:nth-child(5) {
     width: 15vw;
     margin-left: 7.5vw;

@@ -16,11 +16,11 @@
     <body>
         <navbar></navbar>
         <main>
-            <form>
-                <input type="text" name="Name" required>
-                <input type="email" name="Email" required>
-                <input type="number" name="Age" required>
-                <input type="textarea" name="Message">
+            <form id="form" onsubmit="thisFunc()">
+                <input type="text" name="Name" placeholder="Name" required>
+                <input type="email" name="Email" placeholder="Email" required>
+                <input type="number" name="Age" placeholder="Age" required>
+                <input type="textarea" name="Message" placeholder="Message">
                 <input type="submit">
             </form>
         </main>
