@@ -1,26 +1,33 @@
 // Global variable housing;
 
     var bigList = [];
+    var heya = document.getElementById('past');
 
 // Function housing;
 
     function thisFunc(){
         event.preventDefault();
-        let list = document.getElementById('form').serializeArray();
+        let buns = document.getElementById('form');
         let formed = {
-            name: list[0].value,
-            email: list[1].value,
-            age: list[2].value,
-            message: list[3].value
+            name: buns.elements[0].value,
+            email: buns.elements[1].value,
+            age: buns.elements[2].value,
+            message: buns.elements[3].value
         };
         bigList.push(formed);
         localStorage.formies = JSON.stringify(bigList);
+        console.log(bigList);
+        let mained = document.getElementById('mainstayed');
+        mained.innerHTML = `<h2>Welcome, ${buns.elements[0].value}!</h2>`;
     }
 
 // Run on load housing;
 
     if(localStorage.formies){
         bigList = JSON.parse(localStorage.formies);
+        for(let i = bigList.length - 1; i >= 0; i--){
+            heya.innerHTML += `<p>${bigList[i].name} | ${bigList[i].email} | Age: ${bigList[i].age} | Message: ${bigList[i].message}</p>`;
+        }
     };
 
     console.log(bigList);

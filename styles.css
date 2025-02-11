@@ -38,6 +38,13 @@ form input:nth-child(5) {
 
 /*ID styling*/
 
-    
+#mainstay {
+    text-align: center;
+    margin-top: 3em;
+}
+
+#past {
+    text-align: center;
+}
 
 /*@media queries*/

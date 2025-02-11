@@ -11,11 +11,14 @@
 
          <!--Custom-->
          <link rel="stylesheet" href="/styles.css"/>
-         <script src="/scripts.js"></script>
+         
     </head>
     <body>
         <navbar></navbar>
         <main>
+            <div id="mainstay">
+                <h2 id="mainstayed">Welcome!</h2>
+            </div>
             <form id="form" onsubmit="thisFunc()">
                 <input type="text" name="Name" placeholder="Name" required>
                 <input type="email" name="Email" placeholder="Email" required>
@@ -23,8 +26,12 @@
                 <input type="textarea" name="Message" placeholder="Message">
                 <input type="submit">
             </form>
+            <div id="past">
+                <h2>Previous Entries</h2>
+            </div>
         </main>
         <footer></footer>
         <!--Storage start--><!--Storage end-->
     </body>
+    <script src="/scripts.js"></script>
 </html>
