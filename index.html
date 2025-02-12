@@ -19,17 +19,20 @@
             <div id="mainstay">
                 <h2 id="mainstayed">Welcome!</h2>
             </div>
+            <!--Form in the required docs-->
             <form id="form" onsubmit="thisFunc()">
                 <input type="text" name="Name" placeholder="Name" required>
                 <input type="email" name="Email" placeholder="Email" required>
                 <input type="number" name="Age" placeholder="Age" required>
                 <input type="textarea" name="Message" placeholder="Message">
+                <!--My special twist-->
                 <div id="terms">
                     <input type="checkbox" required>
                     <label for="checkbox">I agree to the terms and conditions and agree to allow <i>TREV inc.</i> to send me emails regarding new information posted about absolutely nothing.</label>
                 </div>
                 <input type="submit">
             </form>
+            <!--Store the past entries and a button to clear the local storage-->
             <div id="past">
                 <h2>Past 10 Entries</h2>
                 <button id="clear" onclick="clearStor()">Clear Local Storage</button>
