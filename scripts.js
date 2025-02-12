@@ -18,7 +18,7 @@
         localStorage.formies = JSON.stringify(bigList);
         console.log(bigList);
         let mained = document.getElementById('mainstayed');
-        mained.innerHTML = `<h2>Welcome, ${buns.elements[0].value}!</h2>`;
+        mained.innerHTML = `<h2>Thank you for siging up, ${buns.elements[0].value}!</h2>`;
     }
 
 // Run on load housing;
