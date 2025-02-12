@@ -69,6 +69,7 @@ form input:nth-child(6) {
 
 #past {
     text-align: center;
+    padding: 0 5em;
 }
 
 /*@media queries*/
