@@ -16,14 +16,20 @@ body {
     background-color: rgb(255, 177, 59);
 }
 
-form {
-    text-align: center;
-    padding: 2em 35%;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-form input {
+form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+form * {
     margin-bottom: .2em;
-    display: block;
     width: 30vw;
 }
 
@@ -56,8 +62,8 @@ form input:nth-child(6) {
 }
 
 #terms input:nth-child(1) {
-    width: 96px;
-    flex: 0 0 16px;
+    max-width: 16px;
+    min-width: 16px;
     margin-right: 1em;
 }
 

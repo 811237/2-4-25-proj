@@ -25,9 +25,16 @@
 
     if(localStorage.formies){
         bigList = JSON.parse(localStorage.formies);
-        for(let i = bigList.length - 1; i >= 0; i--){
-            heya.innerHTML += `<p>${bigList[i].name} | ${bigList[i].email} | Age: ${bigList[i].age} | Message: ${bigList[i].message}</p>`;
-        }
+        if(bigList.length >= 10){
+            for(let i = bigList.length - 1; i >= bigList.length - 10; i--){
+                heya.innerHTML += `<p>${bigList[i].name} | ${bigList[i].email} | Age: ${bigList[i].age} | Message: ${bigList[i].message}</p>`;
+            }
+        }else{
+            for(let i = bigList.length - 1; i >= 0; i--){
+                heya.innerHTML += `<p>${bigList[i].name} | ${bigList[i].email} | Age: ${bigList[i].age} | Message: ${bigList[i].message}</p>`;
+            }
+        };
+        
     };
 
     console.log(bigList);
