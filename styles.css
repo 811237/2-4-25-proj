@@ -72,4 +72,10 @@ form input:nth-child(6) {
     padding: 0 5em;
 }
 
+#clear {
+    background-color: rgb(199, 50, 50);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
 /*@media queries*/

@@ -1,9 +1,25 @@
 // Global variable housing;
 
     var bigList = [];
-    var heya = document.getElementById('past');
+    var heya = document.getElementById('entries');
 
 // Function housing;
+
+    function showOff(){
+        if(localStorage.formies){
+            bigList = JSON.parse(localStorage.formies);
+            if(bigList.length >= 10){
+                for(let i = bigList.length - 1; i >= bigList.length - 10; i--){
+                    heya.innerHTML += `<p>${bigList[i].name} | ${bigList[i].email} | Age: ${bigList[i].age} | Message: ${bigList[i].message}</p>`;
+                }
+            }else{
+                for(let i = bigList.length - 1; i >= 0; i--){
+                    heya.innerHTML += `<p>${bigList[i].name} | ${bigList[i].email} | Age: ${bigList[i].age} | Message: ${bigList[i].message}</p>`;
+                }
+            };
+            
+        };
+    }
 
     function thisFunc(){
         event.preventDefault();
@@ -19,24 +35,17 @@
         console.log(bigList);
         let mained = document.getElementById('mainstayed');
         mained.innerHTML = `<h2>Thank you for siging up, ${buns.elements[0].value}!</h2>`;
+        heya.innerHTML = '';
+        showOff();
+    }
+
+    function clearStor(){
+        localStorage.clear();
+        location.reload();
     }
 
 // Run on load housing;
 
-    if(localStorage.formies){
-        bigList = JSON.parse(localStorage.formies);
-        if(bigList.length >= 10){
-            for(let i = bigList.length - 1; i >= bigList.length - 10; i--){
-                heya.innerHTML += `<p>${bigList[i].name} | ${bigList[i].email} | Age: ${bigList[i].age} | Message: ${bigList[i].message}</p>`;
-            }
-        }else{
-            for(let i = bigList.length - 1; i >= 0; i--){
-                heya.innerHTML += `<p>${bigList[i].name} | ${bigList[i].email} | Age: ${bigList[i].age} | Message: ${bigList[i].message}</p>`;
-            }
-        };
-        
-    };
-
-    console.log(bigList);
+    showOff();
 
 // Action-lead event housing;
