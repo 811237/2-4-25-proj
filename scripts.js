@@ -21,9 +21,11 @@
         };
     }
 
+    // Runs when the form is submitted
     function thisFunc(){
         event.preventDefault();
         let buns = document.getElementById('form');
+        // Accesses and returns the values of the form
         let formed = {
             name: buns.elements[0].value,
             email: buns.elements[1].value,
@@ -32,7 +34,7 @@
         };
         bigList.push(formed);
         localStorage.formies = JSON.stringify(bigList);
-        console.log(bigList);
+        // Local storage updates ^ and updates the welcome phrase \/
         let mained = document.getElementById('mainstayed');
         mained.innerHTML = `<h2>Thank you for siging up, ${buns.elements[0].value}!</h2>`;
         heya.innerHTML = '';
