@@ -1,15 +1,6 @@
 /*  Design consistency notes:
     Selectors should be mentioned in the order they appear on screen
 */
-
-/*Fonts*/
-
-
-
-/*Keyframes*/
-
-
-
 /*Element styling*/
 
 body {
@@ -40,10 +31,6 @@ form input:nth-child(6) {
     color: rgb(255, 255, 255);
     font-weight: 700;
 }
-
-/*Class styling*/
-
-
 
 /*ID styling*/
 
@@ -77,5 +64,3 @@ form input:nth-child(6) {
     color: rgb(255, 255, 255);
     font-weight: 700;
 }
-
-/*@media queries*/

@@ -1,0 +1,3 @@
+I just made a simple form that asks for info and then prints the info retrieved to the screen.
+
+there really were no challenges and local storage is used to store the form so that the entries are preserved even after exiting the instance.

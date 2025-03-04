@@ -49,5 +49,3 @@
 // Run on load housing;
 
     showOff();
-
-// Action-lead event housing;
